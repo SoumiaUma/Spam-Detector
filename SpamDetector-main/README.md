@@ -1,9 +1,11 @@
 # CSCI 2020U - Assignment 1
 
-Group Members: Maxwell McLaughlin and Soumia Umaputhiran (100744669)
+Group Members: Maxwell McLaughlin and Soumia Umaputhiran 
 
 Project Information
-The purpose of this project is to create a spam detector that will train itself using some spam and not spam emails. Then this training is tested using some spam and not spam (ham emails) and displays a JavaFX application of the spam probability of the emails. Some statistics is also displayed on the bottom of the JavaFX application. The accuracy of the spam detector and the precision of the spam dector are the statistics used in this project to determine the effectiveness of the spam detector. The Naive Bayes spam filtering and Bag-of-words model was used for this spam detector.
+
+The purpose of this project is to create a spam detector that will train itself using some spam and not spam (ham) emails. The spam detector uses a dataset of E-Mails (spam or otherwise) to train the program to recognize whether or not new E-Mails are spam. The program will use a unigram approach, where each word is counted and associated with whether or not the message is spam. Our program calculates probabilities based on each word’s frequency. The accuracy and the precision of the spam detector are the statistics used in this project to determine the effectiveness of the spam detector. The Naive Bayes spam filtering and Bag-of-words model was used for training the spam detector.
+
 
 This is a screenshot of the running application
 
@@ -27,11 +29,8 @@ Instructions for Intelli J:
 - Go to Main.java which is located in _src/csci2040u.assignment1_
 - Click on the little green hammar on the top right of the screen.
 - Click on the little green play button to run the program
-Now you will see the JavaFX application.
+Now you will see the JavaFX application!
 
-Improvments
-
-We improved the project by making sure that the words read into the file during training is lower cased so the same words are not counted as two different words. For example, "apple" and "Apples" will be known as one word. In addition, we included the files that have a file with probability of 1 given that the word in the file is a spam word, to the spam probability calculation. The probability of 1.0 could not be used in the spam probability calculation, so it was made to 0.9, to round as close to 1.0 as possible. In addition, when the spam emails were read during the testing phase of the project, if the probability of a file was 0 given that a word in the file is spam, it was made to 0.5, since the Bayesian model predicts 50% of emails are assumed to be spam.
 
 References
 
