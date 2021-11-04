@@ -1,4 +1,4 @@
-# CSCI 2020U - Assignment 1
+# Spam Detector
 
 Group Members: Maxwell McLaughlin and Soumia Umaputhiran 
 
